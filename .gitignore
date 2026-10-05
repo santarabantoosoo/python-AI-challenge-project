@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# AI Challenge Battle local state (server-side rate limit counter — do not commit)
+.ai_battle_count.json

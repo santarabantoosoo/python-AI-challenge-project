@@ -1,0 +1,61 @@
+"""Teacher-approved concept illustrations (text diagrams).
+Shown after the AI battle ends to turn the mistake into learning.
+"""
+
+ILLUSTRATIONS = {
+"photosynthesis": "☀️ sunlight\n   ↓\n🍃 LEAF takes in CO₂\n   ↓\n🌱 FOOD + O₂ out",
+"states of matter": "      HEAT\n        ↓\n 💧 LIQUID WATER\n        ↓\n   💨 WATER VAPOR",
+"water cycle": "☀️ EVAPORATION\n   💨 vapor up\n☁️ CONDENSATION\n   🌧️ PRECIPITATION\n🌊 COLLECTION",
+"solar system": "☀️ — ☿ Mercury — ♀ Venus — 🌍 Earth — ♂ Mars",
+"gravity": "🍎 apple\n  ↓ gravity\n🌍 Earth",
+"plant structure": "🌸 flower\n🌿 stem\n🍃 leaf makes food\n🌱 root absorbs water",
+"food chain": "🌱 producer → 🐛 consumer → 🦊 consumer",
+"electricity": "🔋 —🔌 copper wire (conductor) → 💡 ON\n🚫 rubber/plastic = insulator",
+"forces and motion": "◀— fulcrum —▶\n   LEVER turns here",
+"oceans": "🌊 Pacific (largest) | Atlantic | Indian | Arctic",
+"continents": "7 continents:\nAfrica • Asia • Europe • N.America • S.America • Australia • Antarctica",
+"capitals": "🇫🇷 Paris = France\n🇪🇬 Cairo = Egypt",
+"rivers": "🏞️ Nile flows through Egypt → Mediterranean",
+"volcano": "🌋 VOLCANO\n  lava + ash erupt",
+"deserts": "🏜️ Sahara = largest hot desert",
+"landforms": "🏝️ ISLAND = land + water all around",
+"compass": "    N\nW ─┼─ E  (sun rises in East)\n    S",
+"globe": "— Equator (middle of Earth) —",
+"maps": "🗺️ contour lines = equal height",
+"climate": "🌧️🌧️ rainforest: rain all year",
+"multiplication": "7 × 8 = 56\n12 × 12 = 144",
+"fractions": "½ = 2/4\n2/4 + 1/4 = 3/4 🍕",
+"primes": "7 = PRIME (only 1 × 7)",
+"subtraction": "100 − 37 = 63",
+"angles": "∟ = 90° right angle",
+"patterns": "2 → 4 → 8 → 16 → 32 (×2)",
+"shapes": "⬡ hexagon = 6 sides",
+"area": "▭ 5cm × 4cm = 20 sq cm",
+"percentages": "15% of 200 = 30",
+"numbers": "22 = EVEN (÷2 exactly)",
+"addition": "9 + 9 + 9 = 27",
+"time": "⏰ 1h = 60min → 2h = 120min",
+"ancient greece": "🏛️ Greece: Euclid (~300 BC) + Olympics",
+"ancient egypt": "🔺 pyramids = tombs\n📜 hieroglyphs on papyrus",
+"rome": "🏟️ Rome: Latin + straight roads",
+"exploration": "🧭 compass shows direction",
+"modern history": "🌙 1969: Neil Armstrong first on moon",
+"china": "🧱 Great Wall = China",
+"vikings": "🛶 Vikings from Scandinavia",
+"history skills": "🏺 artefacts = objects from the past\n10y = decade, 100y = century",
+"islamic golden age": "📐 Al-Khwarizmi → algebra + algorithm",
+"output": "print('Hello')\n  ↓\n🖥️ Hello",
+"variables": "📦 user = 'Claude'\n(variable = labelled box)",
+"input": "⌨️ input() → reads keyboard",
+"operators": "7 // 2 = 3  (floor division)",
+"loops": "🔁 while True:\n    keep going!",
+"conditions": "if True: ...\nelse: ... (runs when if is False)",
+"types": "'Hello' = str (text)\n13 = int (whole number)",
+"syntax errors": "⚠️ SyntaxError →\nPython stops that line\ncheck brackets: print('Hi')",
+"lists": "len([a, b, c]) = 3",
+}
+
+DEFAULT_ILLUSTRATION = "💡 Remember the concept and try again!"
+
+def get_illustration(concept):
+    return ILLUSTRATIONS.get(concept, DEFAULT_ILLUSTRATION)
